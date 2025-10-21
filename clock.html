@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1b1b2f);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        font-family: "Courier New", monospace;
+        color: #fff;
+        text-align: center;
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      #clock {
+        font-size: 80px;
+        text-shadow: 0 0 20p
